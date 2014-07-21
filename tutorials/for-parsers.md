@@ -43,7 +43,8 @@ For the separator make sure to test if string has ended:
 Run through [closure compiler](http://closure-compiler.appspot.com/home) on advanced mode
 
 
-===Example Parser
+Example Parser
+-----------
 ```js
 function parseUrlParams (str) {
         var c = str.charCodeAt(0), s = 0, i = 0, l = str.length, find, obj = {obj : {}};
