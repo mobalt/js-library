@@ -1,9 +1,8 @@
-
 Tips for generating parsers
 ===========================
 
 0. Define the following function which converts the string into charCodes
-
+	:::javascript
 	```
 	function conv(chr){
 		return chr.charCodeAt(0);
@@ -11,14 +10,14 @@ Tips for generating parsers
 	```
 
 1. First make sure a character **c** and start value **s** are previously defined in a previous loop or if-then
-
+	:::javascript
 	```
 		c = str.charCodeAt(++i);
 		s = i;
 	```
 
 2. If trying to capture a string of length >= 1:
-
+	:::javascript
 	```
 		for (; c != conv(']') && i < length; ) {
 			c = str.charCodeAt(++i);
@@ -30,7 +29,7 @@ Tips for generating parsers
 	```
 
 2. If capturing single char:
-
+	:::javascript
 	```
 		if (c == conv(']')){
 			//run code
@@ -39,7 +38,7 @@ Tips for generating parsers
 	```
 
 3. For the separator make sure to test if string has ended:
-
+	:::javascript
     ```
     	if (c===conv('&') || i===length) {
     		c = str.charCodeAt(++i);
