@@ -1,5 +1,7 @@
+
 Tips for generating parsers
 ===========================
+
 0. Define the following function which converts the string into charCodes
 
 	```javascript
