@@ -2,17 +2,17 @@ Tips for generating parsers
 ===========================
 
 0. Define the following function which converts the string into charCodes
-	```js
+```js
 	function conv(chr){
 		return chr.charCodeAt(0);
 	}
-	```
+```
 
 1. First make sure a character **c** and start value **s** are previously defined in a previous loop or if-then
-	```js
+```js
 		c = str.charCodeAt(++i);
 		s = i;
-	```
+```
 
 2. If trying to capture a string of length >= 1:
 	```js
