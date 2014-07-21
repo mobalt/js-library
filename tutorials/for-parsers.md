@@ -38,11 +38,10 @@ Tips for generating parsers
 	```
 
 3. For the separator make sure to test if string has ended:
-	:::javascript
-    ```
-    	if (c===conv('&') || i===length) {
-    		c = str.charCodeAt(++i);
-    	}
-	```
+```js
+if (c===conv('&') || i===length) {
+	c = str.charCodeAt(++i);
+}
+```
 
 4. Run through [closure compiler](http://closure-compiler.appspot.com/home) on advanced mode
